@@ -1,0 +1,103 @@
+<meta charset="UTF-8">
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>달빛카페 메뉴판</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif;
+      background-color: #faf8f5;
+      color: #2c2c2c;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 100vh;
+      padding: 24px 20px;
+      max-width: 480px;
+      margin: 0 auto;
+    }
+    header {
+      text-align: center;
+      padding: 20px 0 30px;
+      border-bottom: 3px solid #e0dcd5;
+    }
+    h1 {
+      font-size: 2.2rem;
+      font-weight: 800;
+      color: #1a1a1a;
+      letter-spacing: -0.5px;
+    }
+    main {
+      flex: 1;
+      padding: 30px 0;
+    }
+    .menu-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .menu-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #ffffff;
+      padding: 24px 20px;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      border: 1px solid #f0ede6;
+    }
+    .menu-name {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #333333;
+    }
+    .menu-price {
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: #d97706;
+    }
+    footer {
+      text-align: center;
+      padding: 20px 0 10px;
+      font-size: 1.1rem;
+      color: #888888;
+      border-top: 1px solid #e0dcd5;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🌙 달빛카페</h1>
+  </header>
+
+  <main>
+    <ul class="menu-list">
+      <li class="menu-item">
+        <span class="menu-name">아메리카노</span>
+        <span class="menu-price">3,500원</span>
+      </li>
+      <li class="menu-item">
+        <span class="menu-name">카페라떼</span>
+        <span class="menu-price">4,000원</span>
+      </li>
+      <li class="menu-item">
+        <span class="menu-name">딸기케이크</span>
+        <span class="menu-price">5,500원</span>
+      </li>
+    </ul>
+  </main>
+
+  <footer>
+    가상의 가게입니다
+  </footer>
+
+</body>
+</html>
